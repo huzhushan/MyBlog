@@ -1,0 +1,116 @@
+.panel-body {
+  padding: 16px 32px;
+  img {
+    max-width: 100%;
+  }
+}
+.panel-title {
+  margin: 0;
+  padding: 24px 16px;
+  font-size: 24px;
+}
+.article-info {
+  font-size: 14px;
+  color: #999
+}
+
+.tocify-list {
+  :global .ant-affix {
+    margin: 0 -15px;
+    padding: 15px;
+    box-sizing: content-box;
+    background: #fff;
+    border-radius: 4px;
+  }
+}
+
+
+.reaction-btns {
+  display: flex;
+  justify-content: center;
+  padding: 64px 0 32px;
+  margin: 0;
+  list-style: none;
+  color: #999;
+  li {
+    width: 80px;
+    text-align: center;
+  }
+  i {
+    font-size: 32px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: #515151;
+    &:hover {
+      color: #ee4136
+    }
+  }
+}
+
+.comment-box {
+  position: relative;
+  &:after {
+    content: '点击此处使用github账号登录';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 4px;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+}
+
+.labels {
+  margin-top: 10px;
+  a {
+    margin: 2px
+  }
+}
+
+.anchor-fix {
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+
+pre{
+  display: block;
+  background-color:#f3f3f3;
+   padding: .5rem !important;
+   overflow-y: auto;
+   font-weight: 300;
+   font-family: Menlo, monospace;
+   border-radius: .3rem;
+}
+pre{
+  background-color: #283646 !important;
+}
+pre > code{
+  border:0px !important;
+  background-color: #283646 !important;
+  color:#FFF;
+  white-space: pre;
+}
+code {
+  display: inline-block ;
+  background-color:#f3f3f3;
+  border:1px solid #fdb9cc;
+  border-radius:3px;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color:#4f4f4f;
+  margin: 0px 3px;
+  
+}

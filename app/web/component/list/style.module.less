@@ -1,0 +1,57 @@
+:global .panel-box {
+  &:hover {
+    :local .article-thumb img {
+      transform: scale(1.2)
+    }
+  }
+  :local .panel-body {
+    padding: 24px;
+    .article-content {
+      margin-top: 15px;
+    }
+  }
+
+}
+.article-thumb {
+  
+  display: block;
+  overflow: hidden;
+  
+  img {
+    transition: .5s all ease;
+    max-width: 100%;
+    background: #f5f5f5
+  }
+}
+.article-body {
+  color: #777;
+  line-height: 1.8;
+
+  .article-summary {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;    /*设置最大3行，父元素需填写宽度才明显*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  .article-info {
+    text-align: right;
+    color: #aaa
+  }
+}
+
+:global .panel-title {
+  :local .box-list-title {
+    vertical-align: sub;
+    font-size: 18px;
+    font-weight: 700;
+    // color: #ee4136;
+    text-decoration: none;
+    margin-left: 10px;
+    &:hover {
+      color: #ee4136
+    }
+  }
+}
+
